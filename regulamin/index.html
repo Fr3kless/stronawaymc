@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+    <!-- title -->
+    <title>WayMC.pl</title>
+</head>
+<body>
+</div>
+<div class="header-background"></div>
+    <div id="start" class="header">
+        <div class="logo">
+            <img src="assets/img/waymc.png" alt="">
+            <h1>WayMC.pl</h1>
+            <div class="online">
+                <div class="dot"></div>
+                <div class="text">
+                    <span data-playercounter-ip="waymc.pl">ladowanie..</span>
+                    <h2>online</h2>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="../"><h2>Start</h2></a>
+            <a href="#"><h2>regulamin</h2></a>
+            <button onclick="location.href='../sklep'"class="btn-slanted">
+                <div>SKLEP</div>
+              </button>
+        </div>
+    </div>
+
+    
+    <div class="main">
+        <div class="reg">
+            <h1>REGULAMIN SERWISU WAYMC.PL</h1>
+            <div class="line"></div>
+            <h2>1. Lorem ipsum dolor sit amet</h2>
+            <h3>...</h3>
+            <h3>...</h3>
+            <h3>...</h3>
+            <h2>2. Lorem ipsum dolor sit amet</h2>
+            <h3>...</h3>
+            <h3>...</h3>
+            <h3>...</h3>
+        </div>
+    </div>
+   
+
+
+    <div class="footer">
+        <div class="logo">
+            <a href="#start"><img src="assets/img/waymc.png" alt=""></a>
+        </div>
+        <div class="links">
+            <h1>
+                <span class="material-symbols-outlined">
+                    link
+                    </span>
+                Przenośniki:
+            </h1>
+
+            <a href="#start"><h2>• Strona główna</h2></a>
+            <a href="regulamin"><h2>• Regulamin</h2></a>
+            <h2 href="sklep">• Sklep</h2></a>
+
+        </div>
+        <div class="media">
+            <h1>
+                <span class="material-symbols-outlined">
+                    share
+                    </span>
+                Media:
+            </h1>
+
+            <h2>• Discord</h2>
+            <h2>• Facebook</h2>
+            <h2>• YouTube</h2>
+        </div>
+    </div>
+    <div class="madeby">
+        <h1><b>ⓒ</b> 2022 <b>WAYMC.PL</b> Wszelkie prawa zastrzeżone.</h1>
+        <h2>FRONTEND: <b>VAZSSEN<b></h2>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+            } 
+        });
+        });
+        </script>
+</body>
+</html>
